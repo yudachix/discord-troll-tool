@@ -16,7 +16,7 @@ const clamp = (value, min = -Infinity, max = Infinity) => {
             : min
     return typeof value !== 'number' || Number.isNaN(value) || value < min
         ? min
-        : max > value
+        : value > max
             ? max
             : value
 }
