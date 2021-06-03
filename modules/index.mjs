@@ -1,6 +1,6 @@
 'use strict'
-import { hsl2rgb } from 'hsl2rgb.mjs'
-import { DiscordToken } from 'discordtoken.mjs'
+import { hsl2rgb } from './hsl2rgb.mjs'
+import { DiscordToken } from './discordtoken.mjs'
 
 const ezSelector = query => query instanceof Element
     ? query
