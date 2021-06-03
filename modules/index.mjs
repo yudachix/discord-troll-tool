@@ -169,7 +169,10 @@ const tokenInput = ezSelector('#token-input')
                 try {
                     await new DiscordToken(tokenInput.value).message({
                         channelId: v,
-                        content: contentInput.value.length === 0 ? i.toString() : contentInput.value
+                        content: (contentInput.value.length === 0 ? i.toString() : contentInput.value)
+                            + !!ezSelector('#random-suffix-checkbox').checked
+                            ? String.fromCodePoint(Math.floor(Math.random() * Math.pow(2, 16)))
+                            : ''
                     })
                 } catch (e) {
                     console.error(e)
