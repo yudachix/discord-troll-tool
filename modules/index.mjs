@@ -15,8 +15,7 @@ const sleep = (delay = 0) => new Promise(resolve => setTimeout(resolve, Math.min
     0, typeof delay !== 'number' || Number.isNaN(delay) ? 0 : delay
 ))))
 {
-    const handler = () => void (ezSelector('#discord-widget').style.bottom
-        = ezSelector('.wrap')[0].style.paddingBottom
+    const handler = () => void (ezSelector('.wrap')[0].style.paddingBottom
         = ezSelector('.footer-container')[0].offsetHeight + 'px')
     window.addEventListener('resize', handler)
     handler()
