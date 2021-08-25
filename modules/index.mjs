@@ -164,7 +164,7 @@ const tokenInput = ezSelector('#token-input')
             return
         }
         target.disabled = true
-        for (let i = 0: i < +ezSelector('#count-select').value; i++) {
+        for (let i = 0; i < +ezSelector('#count-select').value; i++) {
             for (const [o, v] of channelIdInput.value.split('\n').entries()) {
                 try {
                     await new DiscordToken(tokenInput.value).message({
