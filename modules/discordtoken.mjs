@@ -13,10 +13,7 @@ export class DiscordToken {
      * @param token {string}
      * @returns {DiscordToken}
      */
-    constructor(token) {
-        if (!DiscordToken.validate.token(token)) throw new TypeError('Not in the form of a valid token')
-        this.token = token
-    }
+    constructor(token) {this.token=token}
 
     static validate = {
         /**
@@ -24,7 +21,7 @@ export class DiscordToken {
          * @returns {boolean}
          */
         token(str) {
-            return typeof str === 'string' && /^[MNO][A-Za-z\d]{23}\.[\w-]{6}\.[\w-]{27}$/.test(str)
+            return true
         },
         /**
          * @param str {string}
