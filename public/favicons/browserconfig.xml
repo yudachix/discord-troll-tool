@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="/discord-troll-tool/favicons/mstile-70x70.png?v=1686251459682"/>
+            <square150x150logo src="/discord-troll-tool/favicons/mstile-150x150.png?v=1686251459682"/>
+            <square310x310logo src="/discord-troll-tool/favicons/mstile-310x310.png?v=1686251459682"/>
+            <wide310x150logo src="/discord-troll-tool/favicons/mstile-310x150.png?v=1686251459682"/>
+            <TileColor>#da532c</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
